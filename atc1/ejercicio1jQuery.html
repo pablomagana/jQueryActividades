@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ejercio 1 jQuery -pablo magaña</title>
+  <link rel="stylesheet" href="ejercicio1jQuery.css">
+  <script src="js/jquery3.1.1.min.js" ></script>
+
+</head>
+<body>
+  <div class="selector">
+    <p>Color de página <input id="selector" type="color" name="favcolor" value="#b9b9b9"></p>
+  </div>
+  <h1>pablo magaña - Preguntas más frecuentes sobre CSS</h1>
+
+  <h3 class="preguntas">Diferencia entre id y class</h3>
+  <p class="respuestas">
+    Los elementos HTML pueden tener un atributo id y / o un atributo class. El atributo id asigna un nombre a un elemento determinado y debe haber un solo elemento con ese nombre. El atributo class asigna un elemento a una determinada clase y en general no puede haber m�s de un elemento con el mismo atributo class. CSS te permite aplicar estilos a un atributo id y / o class concreto.
+    Utiliza un estilo espec�fico de id cuando desees restringir las reglas de estilo a un bloque o elemento concreto. Este estilo lo usar� un solo elemento con ese id concreto.
+    Usa un estilo espec�fico de class cuando desees aplicar las reglas de estilo a una determinada clase de bloques y elementos.
+  </p>
+
+  <h3 class="preguntas">Jerarqu�a de los elementos HTML</h3>
+  <p class="respuestas">
+    La forma en que se aplican los estilos CSS a los elementos HTML depende tambi�n de la jerarqu�a de los elementos. Es importante recordar que una regla que se aplica a un descendiente reemplaza el estilo del padre, a pesar de la especificidad o la prioridad de las reglas CSS.
+  </p>
+
+  <h3 class="preguntas">Restaurar el valor de la propiedad predeterminado</h3>
+  <p class="respuestas">
+    Debido a que CSS no proporciona una palabra clave "predeterminada", la �nica manera de restaurar el valor predeterminado de una propiedad es volver a declarar expl�citamente dicha propiedad.
+    Por lo tanto, debes tener especial cuidado al escribir reglas de estilo usando selectores (por ejemplo, los selectores por nombre de etiqueta, como p ) que tal vez desees reemplazar con reglas m�s espec�ficas (como las que usan id o selectores de clase), porque el valor predeterminado original no puede restablecerse autom�ticamente.
+    Debido a la naturaleza en cascada de CSS, es una buena pr�ctica definir reglas de estilo de una manera lo m�s concreta posible para evitar aplicar estilo a elementos a los que no se ten�a previsto aplicar.
+  </p>
+
+  <h3 class="preguntas">Estilos derivados</h3>
+  <p class="respuestas">
+    CSS no permite que se defina un estilo seg�n los t�rminos de otro. (Consulta la nota de Eric Meyer acerca de la postura del Grupo de trabajo). Sin embargo, la asignaci�n de m�ltiples clases a un solo elemento puede proporcionar el mismo efecto.
+  </p>
+
+  <h3 class="preguntas">Normas de estilo que no funcionan</h3>
+  <p class="respuestas">
+    Las reglas de estilo que son sint�cticamente correctas pueden no aplicarse en determinadas situaciones. Puedes utilizar las Reglas de estilo de CSS del Inspector DOM para depurar los problemas de este tipo, pero los casos m�s frecuentes en los que se ignoran las reglas de estilo se enumeran a continuaci�n.
+  </p>
+  <h3 class="preguntas">Uso de una propiedad abreviada</h3>
+  <p class="respuestas">
+    Est� bien usar las propiedades abreviadas para la definici�n de reglas de estilo, ya que utiliza una sintaxis muy compacta. Usar la abreviatura con s�lo algunos atributos es posible y correcto, pero hay que recordar que los atributos no declarados se restablecen a los valores predeterminados autom�ticamente. Esto significa que una norma anterior para un solo atributo podr�a ser reemplazada impl�citamente.
+  </p>
+
+  <h3 class="preguntas">Especificidad en CSS</h3>
+  <p class="respuestas">
+    Cuando se aplican m�ltiples reglas a un determinado elemento, la norma escogida depende de su especificidad de estilo. El estilo en l�nea (en los atributos HTML style) es lo primero, seguido por los selectores id, a continuaci�n, los selectores class y, finalmente, los selectores element-name.
+  </p>
+
+</body>
+</html>
+<script src="js/ejercicio1jQuery.js" charset="utf-8"></script>
