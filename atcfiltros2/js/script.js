@@ -1,11 +1,10 @@
 $(document).ready(function(){
 //1. Selecciona todos los párrafos que tengan el atributo class y le cambias el color de fondo a amarillo.
-$('p[class]').css('background-color','yellow');
+//$('p[class]').css('background-color','yellow');
 //2. Selecciona todos los párrafos que tengan el atributo id con el valor “parrafo1” y le cambios el color de fondo a verde oscuro.
-$('p[id="p1"]').css('background-color','red');
+//$('p[id="p1"]').css('background-color','red');
 //3. Selecciona todos los párrafos cuyo id empiece como “par” y cambia la letra a verdana y negrita.
-$('p[id^="par"]').css('font-family','verdana');
-$('p[id^="par"]').css('font-weight','bold');
+$('p[id^="par"]').css("font-family:verdana;font-weight:bold");
 //4. Selecciona todos los párrafos cuya clase No sea “clase1” o los párrafos que no contengan el atributo class.
 
 //5. Selecciona los párrafos que contienen en el id el valor “afo” y lo pondremos con una opacidad del 25% y el ancho de borde será de 200px (usar función animate).
