@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ejercicio 7 jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+    <script src="js/jquery.validate.min.js" charset="utf-8"></script>
+    <script src="js/additional-methods.min.js" charset="utf-8"></script>
+    <style media="screen">
+      table{
+        background-color: rgb(228, 155, 58);
+      }
+      td{
+        border: 1px solid black;
+      }
+      .error{
+        color: rgb(210, 38, 0);
+      }
+      input{
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form-validate" id="formulario" action="index.html" method="post">
+      <table>
+        <tr>
+          <td>Código</td>
+          <span>Introduzca un código númerico</span>
+          <td><input id="numcode" type="number" name="numcode" value="" required></td>
+        </tr>
+        <tr>
+          <td>Números</td>
+          <td><input type="number" name="numbers" value=""required></td>
+        </tr>
+        <tr>
+          <td>Fecha(mm/dd/aaaa)</td>
+          <td><input type="date" name="date" value=""required></td>
+        </tr>
+        <tr>
+          <td>URL</td>
+          <td><input type="url" name="url" value=""></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input type="email" name="email" value=""required></td>
+        </tr>
+        <tr>
+          <td>Tarjeta de crédito</td>
+          <td><input type="number" name="credit" value=""></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button type="submit" name="button">submit</button><button type="reset" name="button">reset</button></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
